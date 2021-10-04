@@ -12,7 +12,7 @@
         <activity
             android:name=".NewPlayer"
             android:exported="true"
-            android:theme="@style/NewPlayer"/>
+            android:theme="@style/NewPlayer" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

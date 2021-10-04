@@ -12,10 +12,10 @@
     <string name="change">change</string>
     <string name="profile">profile</string>
     <string name="camera">camera</string>
-    <string name="nickname">Nickname</string>
     <string name="person">person</string>
-    <string name="todo">TODO</string>
     <string name="buscar">Buscar</string>
     <string name="action_add">Añadir</string>
     <string name="settings">Ajustes</string>
+    <string name="todo">TODO</string>
+    <string name="nickname">Nickname</string>
 </resources>
