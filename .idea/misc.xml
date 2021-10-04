@@ -18,6 +18,9 @@
         <entry key="..\:/Users/alexp/AndroidStudioProjects/PlayJuegos/app/src/main/res/mipmap-anydpi-v26/ic_person_round.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/alexp/AndroidStudioProjects/PlayJuegos/app/src/main/res/mipmap-anydpi-v26/ic_phone.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/alexp/AndroidStudioProjects/PlayJuegos/app/src/main/res/mipmap-anydpi-v26/ic_phone_round.xml" value="0.22135416666666666" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.304673721340388" />
+        <entry key="app/src/main/res/layout-land/newplayer.xml" value="0.304673721340388" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
       </map>
     </option>
   </component>
