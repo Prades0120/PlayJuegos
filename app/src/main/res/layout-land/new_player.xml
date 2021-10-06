@@ -16,15 +16,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/editTextName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toTopOf="@+id/editTextName"
             app:srcCompat="@drawable/ic_person_foreground"
             android:contentDescription="@string/todo"
             tools:ignore="ContentDescription" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextName"
             android:layout_width="590dp"
             android:layout_height="105dp"
             android:layout_marginBottom="1dp"
@@ -46,10 +46,10 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextName"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextName"
             tools:ignore="TextContrastCheck" />
 
         <EditText
