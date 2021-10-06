@@ -18,4 +18,10 @@
     <string name="settings">Ajustes</string>
     <string name="todo">TODO</string>
     <string name="nickname">Nickname</string>
+    <string name="angry_birds">Angry Birds</string>
+    <string name="dragon_fly">Dragon Fly</string>
+    <string name="eligeOpcion">Elige una opción:</string>
+    <string name="hill_climbing_racing">Hill Climbing Racing</string>
+    <string name="pocket_soccer">Pocket Soccer</string>
+    <string name="radiant_defense">Radiant Defense</string>
 </resources>
