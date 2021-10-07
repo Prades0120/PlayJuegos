@@ -24,4 +24,6 @@
     <string name="hill_climbing_racing">Hill Climbing Racing</string>
     <string name="pocket_soccer">Pocket Soccer</string>
     <string name="radiant_defense">Radiant Defense</string>
+    <string name="ninja_jump">Ninja Jump</string>
+    <string name="air_control">Air Control</string>
 </resources>

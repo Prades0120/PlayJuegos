@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         val preferences = findViewById<Button>(R.id.button3)
         preferences.setOnClickListener {lanzarPreferences()}
+
+        val jugar = findViewById<Button>(R.id.button1)
+        jugar.setOnClickListener {lanzarGames()}
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -46,6 +49,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun lanzarPreferences() {
         val i = Intent(this, Preferences::class.java)
+        startActivity(i)
+    }
+
+    private fun lanzarGames() {
+        val i = Intent(this, Games::class.java)
         startActivity(i)
     }
 }
