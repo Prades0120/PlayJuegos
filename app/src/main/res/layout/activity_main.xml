@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -20,45 +21,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="140dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/courgette_regular"
             android:text="@string/play_juegos"
             android:textSize="30sp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="@string/play" />
+            android:text="@string/play"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="@string/new_player" />
+            android:text="@string/new_player"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="@string/preferences" />
+            android:text="@string/preferences"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:text="@string/about" />
+            android:text="@string/about"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:cornerRadius="20dp" />
     </LinearLayout>
 </LinearLayout>

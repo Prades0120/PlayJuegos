@@ -49,6 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="0"
+                    android:background="#FFDCDCDC"
                     android:contentDescription="@string/todo"
                     app:srcCompat="@mipmap/ic_angrybirds_foreground" />
 
@@ -57,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:background="#DCDCDC"
                     android:text="@string/angry_birds"
                     android:textSize="20sp" />
             </TableRow>
@@ -91,6 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
+                    android:background="#FFDCDCDC"
                     android:contentDescription="@string/todo"
                     app:srcCompat="@mipmap/ic_hillclimb_foreground" />
 
@@ -99,6 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:background="#FFDCDCDC"
                     android:text="@string/hill_climbing_racing"
                     android:textSize="20sp" />
             </TableRow>
@@ -133,6 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="0"
+                    android:background="#FFDCDCDC"
                     android:contentDescription="@string/todo"
                     app:srcCompat="@mipmap/ic_pocketsoccer_foreground" />
 
@@ -141,6 +146,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:background="#FFDCDCDC"
                     android:text="@string/pocket_soccer"
                     android:textSize="20sp" />
             </TableRow>
@@ -176,6 +182,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="0"
+                    android:background="#FFDCDCDC"
                     android:contentDescription="@string/todo"
                     app:srcCompat="@mipmap/ic_aircontrol_foreground"
                     tools:ignore="ImageContrastCheck" />
@@ -185,6 +192,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:background="#FFDCDCDC"
                     android:text="@string/air_control"
                     android:textSize="20sp" />
             </TableRow>

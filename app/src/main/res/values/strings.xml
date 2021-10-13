@@ -26,4 +26,25 @@
     <string name="radiant_defense">Radiant Defense</string>
     <string name="ninja_jump">Ninja Jump</string>
     <string name="air_control">Air Control</string>
+    <string name="plataformas">Plataformas:</string>
+    <string name="generos">Generos:</string>
+    <string name="ps4">PS4</string>
+    <string name="rol">Rol</string>
+    <string name="pc">PC</string>
+    <string name="xbox">XBOX</string>
+    <string name="wii">WII</string>
+    <string name="wiiu">WIIU</string>
+    <string name="_3ds">3DS</string>
+    <string name="x360">X360</string>
+    <string name="aventura">Aventura</string>
+    <string name="arcade">Arcade</string>
+    <string name="deportes">Deportes</string>
+    <string name="disparos">Disparos</string>
+    <string name="estrategia">Estrategia</string>
+    <string name="juegos_de_mesa">Juegos de mesa</string>
+    <string name="juegos_musicales">Juegos musicales</string>
+    <string name="lucha">Lucha</string>
+    <string name="puzzles">Puzzles</string>
+    <string name="accion">Accion</string>
+    <string name="simulacion">Simulacion</string>
 </resources>

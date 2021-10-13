@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlayJuegos">
         <activity
+            android:name=".Ajustes"
+            android:exported="false" />
+        <activity
             android:name=".Games"
             android:exported="true"
             android:theme="@style/Preferences" />
