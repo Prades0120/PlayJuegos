@@ -21,72 +21,66 @@
             android:textSize="24sp" />
 
         <com.google.android.material.chip.ChipGroup
-            android:layout_width="wrap_content"
-            android:layout_height="82dp"
-            android:layout_gravity="center_horizontal">
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <!--<com.google.android.material.chip.Chip
+                android:id="@+id/chip"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip 1"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Chip 2"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chip 3"
+                android:textAppearance="?android:textAppearanceMedium"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip4"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:text="@string/ps4"
-                app:chipBackgroundColor="#C8C8C8" />
+                android:text="Chip 4"
+                android:textAppearance="?android:textAppearanceMedium"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip5"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/pc"
-                app:chipBackgroundColor="#C8C8C8" />
+                android:text="Chip 1"
+                android:textAppearance="?android:textAppearanceMedium"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip6"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/xbox"
-                app:chipBackgroundColor="#C8C8C8" />
+                android:text="Chip 1"
+                android:textAppearance="?android:textAppearanceMedium"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip7"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/wii"
-                app:chipBackgroundColor="#C8C8C8" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/wiiu"
-                app:chipBackgroundColor="#C8C8C8" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/_3ds"
-                app:chipBackgroundColor="#C8C8C8" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="@string/x360"
-                app:chipBackgroundColor="#C8C8C8"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:text="Chip 1"
+                android:textAppearance="?android:textAppearanceMedium"/>-->
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -98,9 +92,9 @@
             android:textSize="24sp" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="510dp"
-            android:orientation="vertical" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
@@ -111,7 +105,7 @@
         android:layout_gravity="bottom"
         app:fabAlignmentMode="center"
         app:fabCradleVerticalOffset="12dp"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 

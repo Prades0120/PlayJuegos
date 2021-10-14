@@ -8,6 +8,9 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat.startActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.app_bar_search) {
             Toast.makeText(this,"Busqueda",Toast.LENGTH_LONG).show()
             return true
+        }else if(id == R.id.action_settings){
+            lanzarAjustes()
         }
         return super.onOptionsItemSelected(item)
     }
@@ -54,6 +59,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun lanzarGames() {
         val i = Intent(this, Games::class.java)
+        startActivity(i)
+    }
+
+    private fun lanzarAjustes() {
+        val i = Intent(this, Ajustes::class.java)
         startActivity(i)
     }
 }
