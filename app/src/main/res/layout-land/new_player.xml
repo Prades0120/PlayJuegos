@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="700dp"
         android:theme="@style/NewPlayer">
 
         <ImageView
@@ -16,18 +16,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:contentDescription="@string/todo"
             app:layout_constraintEnd_toStartOf="@+id/editTextName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/editTextName"
             app:srcCompat="@drawable/ic_person_foreground"
-            android:contentDescription="@string/todo"
             tools:ignore="ContentDescription" />
 
         <EditText
             android:id="@+id/editTextName"
             android:layout_width="590dp"
             android:layout_height="105dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="4dp"
             android:ems="10"
             android:hint="@string/name"
             android:importantForAutofill="no"
@@ -41,13 +41,14 @@
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="590dp"
             android:layout_height="105dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="@string/phonetic_name"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
             app:layout_constraintEnd_toEndOf="@+id/editTextName"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.969"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/editTextName"
             tools:ignore="TextContrastCheck" />
@@ -56,32 +57,38 @@
             android:id="@+id/editTextTextPersonName3"
             android:layout_width="590dp"
             android:layout_height="105dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="@string/nickname"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
-            app:srcCompat="@drawable/ic_camera_foreground"
-            android:contentDescription="@string/todo" />
+            app:srcCompat="@drawable/ic_camera_foreground" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="229dp"
             android:layout_height="102dp"
             android:contentDescription="@string/todo"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.248"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609"
             app:srcCompat="@mipmap/ic_launcher"
             tools:ignore="ImageContrastCheck" />
 
@@ -101,45 +108,54 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="108dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:srcCompat="@drawable/ic_phone_foreground"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:srcCompat="@drawable/ic_phone_foreground" />
 
         <EditText
             android:id="@+id/editTextNumber"
             android:layout_width="590dp"
             android:layout_height="105dp"
-            android:layout_marginBottom="3dp"
             android:ems="10"
             android:hint="@string/phone_number"
+            android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="0dp" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="108dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:srcCompat="@drawable/ic_email_foreground"
-            android:contentDescription="@string/todo" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:srcCompat="@drawable/ic_email_foreground" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="590dp"
             android:layout_height="105dp"
+            android:layout_marginStart="1dp"
             android:ems="10"
             android:hint="@string/e_mail"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:importantForAutofill="no" />
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
