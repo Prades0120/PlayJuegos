@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginBottom="58dp"
         android:orientation="vertical">
 
@@ -83,6 +83,13 @@
                 android:textAppearance="?android:textAppearanceMedium"/>-->
 
         </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/red_900"
+            android:text="@string/error_con_los_chips"
+            android:gravity="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -99,24 +106,24 @@
     </LinearLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_appbar"
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         app:fabAlignmentMode="center"
         app:fabCradleVerticalOffset="12dp"
-        style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_anchor="@+id/bottom_appbar"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/ic_cross_foreground"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:layout_anchor="@+id/bottomAppBar"
+        android:src="@drawable/ic_cross_foreground" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

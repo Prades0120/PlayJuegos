@@ -6,14 +6,12 @@
         android:id="@+id/app_bar_search"
         android:icon="@drawable/ic_search_black_24dp"
         android:title="@string/buscar"
-        app:showAsAction="ifRoom"
-        app:actionViewClass="android.widget.SearchView" />
+        app:showAsAction="never" />
 
     <item android:id="@+id/action_add"
         android:title="@string/action_add"
-        android:icon="@android:drawable/ic_menu_add"
         android:orderInCategory="100"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <item android:id="@+id/action_settings"
         android:title="@string/settings"

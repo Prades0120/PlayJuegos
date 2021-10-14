@@ -10,8 +10,13 @@
         android:id="@+id/buttonGeneros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp" />
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 </LinearLayout>

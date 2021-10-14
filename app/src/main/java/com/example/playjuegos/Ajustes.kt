@@ -14,6 +14,9 @@ class Ajustes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ajustes)
 
+        val bottomAppBar = findViewById<BottomAppBar>(R.id.bottomAppBar)
+        bottomAppBar.replaceMenu(R.menu.menu_main)
+
         val items = ArrayList<Generos>()
         items.add(Generos(R.string.accion))
         items.add(Generos(R.string.aventura))
@@ -38,14 +41,5 @@ class Ajustes : AppCompatActivity() {
         adaptador.onClick = {
             Toast.makeText(this, ""+ recView.getChildAdapterPosition(it), Toast.LENGTH_LONG).show()
         }
-        val chipGroup = findViewById<ChipGroup>(R.id.chip_group)
-
-        chipGroup.setOnCheckedChangeListener(object : ChipGroup.OnCheckedChangeListener {
-
-            override fun onCheckedChanged(group: ChipGroup, checkedId: Int) {
-                val checkedChip = group.findViewById<Chip>(checkedId)
-                var option = checkedChip.text as String
-            }
-        })
     }
 }

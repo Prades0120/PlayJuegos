@@ -47,4 +47,5 @@
     <string name="puzzles">Puzzles</string>
     <string name="accion">Accion</string>
     <string name="simulacion">Simulacion</string>
+    <string name="error_con_los_chips">Error con los chips</string>
 </resources>
