@@ -8,9 +8,6 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat.startActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         val jugar = findViewById<Button>(R.id.button1)
         jugar.setOnClickListener {lanzarGames()}
+
+        val about = findViewById<Button>(R.id.button4)
+        about.setOnClickListener {lanzarAbout()}
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -64,6 +64,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun lanzarAjustes() {
         val i = Intent(this, Ajustes::class.java)
+        startActivity(i)
+    }
+
+    private fun lanzarAbout() {
+        val i = Intent(this, About::class.java)
         startActivity(i)
     }
 }

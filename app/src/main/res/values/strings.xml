@@ -48,4 +48,20 @@
     <string name="accion">Accion</string>
     <string name="simulacion">Simulacion</string>
     <string name="error_con_los_chips">Error con los chips</string>
+    <string name="maria_mata">Maria Mata</string>
+    <string name="antonio_sanz">Antonio Sanz</string>
+    <string name="carlos">Carlos</string>
+    <string name="berta">Berta</string>
+    <string name="hector_campos">Hector Campos</string>
+    <string name="ismael">Ismael</string>
+    <string name="rodrigo">Rodrigo</string>
+    <string name="alex">Alex</string>
+    <string name="year2014">2014</string>
+    <string name="year1890">1890</string>
+    <string name="year965">965</string>
+    <string name="year945">945</string>
+    <string name="year879">879</string>
+    <string name="year678">678</string>
+    <string name="year514">514</string>
+    <string name="year398">398</string>
 </resources>
