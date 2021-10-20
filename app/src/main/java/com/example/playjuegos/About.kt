@@ -2,14 +2,19 @@ package com.example.playjuegos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Layout
+import android.widget.CheckBox
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class About : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about)
+
+        val fab = findViewById<FloatingActionButton>(R.id.floatingActionButton3)
 
         val items = ArrayList<Tarjeta>()
         items.add(Tarjeta(R.mipmap.ic_whale_foreground, R.string.maria_mata, R.string.year2014))

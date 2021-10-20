@@ -45,16 +45,14 @@
             app:layout_constraintVertical_bias="0.285"
             tools:ignore="HardcodedText" />
 
-        <TextView
+        <CheckBox
             android:id="@+id/textAbout2"
             android:layout_width="175dp"
             android:layout_height="49dp"
             android:textColor="@color/white"
-            android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageViewAbout"
-            app:layout_constraintTop_toBottomOf="@+id/textAbout1"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintTop_toBottomOf="@+id/textAbout1" />
 
         <View
             android:id="@+id/divider2"

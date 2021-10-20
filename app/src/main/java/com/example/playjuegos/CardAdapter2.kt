@@ -3,17 +3,19 @@ package com.example.playjuegos
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class CardAdapter2(private var items: ArrayList<Tarjeta>) : RecyclerView.Adapter<CardAdapter2.TarjViewHolder>() {
     lateinit var onClick : (View) -> Unit
+    val checkBoxes = arrayListOf<CheckBox>()
 
     class TarjViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private var texto1: TextView = itemView.findViewById(R.id.textAbout1)
-        private var texto2: TextView = itemView.findViewById(R.id.textAbout2)
+        var texto2: CheckBox = itemView.findViewById(R.id.textAbout2)
         private var image: ImageView = itemView.findViewById(R.id.imageViewAbout)
 
         fun bindTarjeta(t: Tarjeta, onClick: (View) -> Unit) = with(itemView) {
@@ -32,6 +34,12 @@ class CardAdapter2(private var items: ArrayList<Tarjeta>) : RecyclerView.Adapter
     override fun onBindViewHolder(viewHolder: TarjViewHolder, pos: Int) {
         val item = items[pos]
         viewHolder.bindTarjeta(item, onClick)
+        viewHolder.texto2.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (viewHolder.texto2.isChecked)
+                checkBoxes.add(viewHolder.texto2)
+            else
+                checkBoxes.remove(viewHolder.texto2)
+        }
     }
 
     override fun getItemCount(): Int {
